@@ -1,0 +1,31 @@
+{
+    "CellRangerGex.sampleName": "Foxp3_minus",
+    "CellRangerGex.fastqName": "2676_Foxp3_minus_IGO_12104_3",
+    "CellRangerGex.inputFastq": [
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L001_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L001_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L001_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L001_R2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L002_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L002_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L002_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L002_R2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L003_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L003_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L003_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L003_R2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L004_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L004_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L004_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L004_R2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L001_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L001_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L001_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L001_R2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L002_I1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L002_I2_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L002_R1_001.fastq.gz",
+        "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12109_2_S36_L002_R2_001.fastq.gz"
+    ],
+    "CellRangerGex.referenceUrl": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz"
+}

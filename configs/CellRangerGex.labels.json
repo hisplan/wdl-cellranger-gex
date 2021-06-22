@@ -1,0 +1,9 @@
+{
+    "pipelineType": "CellRangerGex",
+    "project": "CD4 T cell diff in Af",
+    "sample": "Foxp3_minus",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-gwf-core/outputs/CellRangerGex/Foxp3_minus",
+    "transfer": "-",
+    "comment": "Cell Ranger GEX"
+}
