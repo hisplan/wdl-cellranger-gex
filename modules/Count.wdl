@@ -7,10 +7,13 @@ task Count {
         String fastqName
         Array[File] inputFastq
         String referenceUrl
+
+        # docker-related
+        String dockerRegistry
     }
 
     String cellRangerVersion = "6.0.2"
-    String dockerImage = "hisplan/cromwell-cellranger:" + cellRangerVersion
+    String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(inputFastq, "GiB")
 
     # ~{sampleName} : the top-level output directory containing pipeline metadata
@@ -42,7 +45,6 @@ task Count {
         if [ $? -eq 0 ]
         then
             tar czf ~{outBase}/analysis.tgz ~{outBase}/analysis/*
-            tar czf debug.tgz ./~{sampleName}/_*
         fi
 
         find .
@@ -67,8 +69,7 @@ task Count {
 
         File cloupe = outBase + "/cloupe.cloupe"
 
-        File pipestance = sampleName + "/" + sampleName + ".mri.tgz"
-        File debugFile = "debug.tgz"
+        File pipestanceMeta = sampleName + "/" + sampleName + ".mri.tgz"
     }
 
     runtime {

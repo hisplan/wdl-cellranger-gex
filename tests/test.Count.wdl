@@ -9,6 +9,9 @@ workflow Count {
         String fastqName
         Array[File] inputFastq
         String referenceUrl
+
+        # docker-related
+        String dockerRegistry
     }
 
     call module.Count {
@@ -16,7 +19,8 @@ workflow Count {
             sampleName = sampleName,
             fastqName = fastqName,
             inputFastq = inputFastq,
-            referenceUrl = referenceUrl
+            referenceUrl = referenceUrl,
+            dockerRegistry = dockerRegistry
     }
 
     output {
@@ -38,7 +42,6 @@ workflow Count {
 
         File cloupe = Count.cloupe
 
-        File pipestance = Count.pipestance
-        File debugFile = Count.debugFile
+        File pipestanceMeta = Count.pipestanceMeta
     }
 }

@@ -9,6 +9,9 @@ workflow CellRangerGex {
         String fastqName
         Array[File] inputFastq
         String referenceUrl
+
+        # docker-related
+        String dockerRegistry
     }
 
     call Count.Count {
@@ -16,7 +19,8 @@ workflow CellRangerGex {
             sampleName = sampleName,
             fastqName = fastqName,
             inputFastq = inputFastq,
-            referenceUrl = referenceUrl
+            referenceUrl = referenceUrl,
+            dockerRegistry = dockerRegistry
     }
 
     output {
@@ -38,7 +42,6 @@ workflow CellRangerGex {
 
         File cloupe = Count.cloupe
 
-        File pipestance = Count.pipestance
-        File debugFile = Count.debugFile
+        File pipestanceMeta = Count.pipestanceMeta
     }
 }
