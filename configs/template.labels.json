@@ -1,0 +1,9 @@
+{
+    "pipelineType": "CellRangerGex",
+    "project": "YOUR_PROJECT_NAME",
+    "sample": "YOUR_SAMPLE_NAME",
+    "owner": "YOUR_USER_ID",
+    "destination": "s3://.../cr-gex-results/",
+    "transfer": "-",
+    "comment": "THIS IS A TEMPLATE"
+}

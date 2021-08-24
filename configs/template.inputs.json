@@ -1,0 +1,12 @@
+{
+    "CellRangerGex.sampleName": "YOUR_SAMPLE_NAME",
+    "CellRangerGex.fastqName": "test_sample1",
+    "CellRangerGex.inputFastq": [
+        "s3://.../test_sample1_S1_L001_I1_001.fastq.gz",
+        "s3://.../test_sample1_S1_L001_R1_001.fastq.gz",
+        "s3://.../test_sample1_S1_L001_R2_001.fastq.gz"
+    ],
+    "CellRangerGex.referenceUrl": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz",
+    "CellRangerGex.memory": 128,
+    "CellRangerGex.dockerRegistry": "quay.io/hisplan"
+}
