@@ -3,4 +3,4 @@
 java -jar ~/Applications/womtool.jar \
     validate \
     CellRangerGex.wdl \
-    --inputs ./configs/CellRangerGex.inputs.json
+    --inputs ./configs/template.inputs.json
