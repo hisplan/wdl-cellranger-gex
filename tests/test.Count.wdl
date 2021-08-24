@@ -10,6 +10,9 @@ workflow Count {
         Array[File] inputFastq
         String referenceUrl
 
+        Int numCores
+        Int memory
+
         # docker-related
         String dockerRegistry
     }
@@ -18,8 +21,10 @@ workflow Count {
         input:
             sampleName = sampleName,
             fastqName = fastqName,
-            inputFastq = inputFastq,
+            inputFastq = inputFastq,            
             referenceUrl = referenceUrl,
+            numCores = numCores,
+            memory = memory,            
             dockerRegistry = dockerRegistry
     }
 

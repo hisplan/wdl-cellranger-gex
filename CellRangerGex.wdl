@@ -10,6 +10,9 @@ workflow CellRangerGex {
         Array[File] inputFastq
         String referenceUrl
 
+        Int numCores = 16
+        Int memory = 128
+
         # docker-related
         String dockerRegistry
     }
@@ -20,6 +23,8 @@ workflow CellRangerGex {
             fastqName = fastqName,
             inputFastq = inputFastq,
             referenceUrl = referenceUrl,
+            numCores = numCores,
+            memory = memory,
             dockerRegistry = dockerRegistry
     }
 

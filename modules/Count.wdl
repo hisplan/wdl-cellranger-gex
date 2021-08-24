@@ -8,6 +8,9 @@ task Count {
         Array[File] inputFastq
         String referenceUrl
 
+        Int numCores = 16
+        Int memory = 128
+
         # docker-related
         String dockerRegistry
     }
@@ -15,6 +18,9 @@ task Count {
     String cellRangerVersion = "6.0.2"
     String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(inputFastq, "GiB")
+
+    # max memory Cell Ranger can use
+    Int localMemory = floor(memory * 0.9)
 
     # ~{sampleName} : the top-level output directory containing pipeline metadata
     # ~{sampleName}/outs/ : contains the final pipeline output files.
@@ -39,7 +45,9 @@ task Count {
             --id=~{sampleName} \
             --transcriptome=./reference/ \
             --fastqs=${path_input} \
-            --sample=~{fastqName}
+            --sample=~{fastqName} \
+            --localcores=~{numCores} \
+            --localmem=~{localMemory}
 
         # targz the analysis folder and pipestance metadata if successful
         if [ $? -eq 0 ]
@@ -75,7 +83,7 @@ task Count {
     runtime {
         docker: dockerImage
         # disks: "local-disk 1500 SSD"
-        cpu: 16
-        memory: "128 GB"
+        cpu: numCores
+        memory: memory + " GB"
     }
 }
