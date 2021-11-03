@@ -15,7 +15,7 @@ task Count {
         String dockerRegistry
     }
 
-    String cellRangerVersion = "6.0.2"
+    String cellRangerVersion = "6.1.1"
     String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(inputFastq, "GiB")
 
@@ -54,8 +54,6 @@ task Count {
         then
             tar czf ~{outBase}/analysis.tgz ~{outBase}/analysis/*
         fi
-
-        find .
     >>>
 
     output {
@@ -82,7 +80,7 @@ task Count {
 
     runtime {
         docker: dockerImage
-        # disks: "local-disk 1500 SSD"
+        disks: "local-disk " + ceil(5 * (if inputSize < 1 then 50 else inputSize)) + " HDD"
         cpu: numCores
         memory: memory + " GB"
     }
