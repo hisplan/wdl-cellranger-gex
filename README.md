@@ -2,13 +2,17 @@
 
 WDLized Cell Ranger Gene Expression Pipeline
 
+## License
+
+The pipeline code is available to everyone under the standard [MIT license](./LICENSE). However, the pipeline internally uses 10x software, so please make sure that you read and agree to [10x End User Software License](https://www.10xgenomics.com/end-user-software-license-agreement).
+
 ## Setup
 
 The pipeline is a part of SCING (Single-Cell pIpeliNe Garden; pronounced as "sing" /siŋ/). For setup, please refer to [this page](https://github.com/hisplan/scing). All the instructions below is given under the assumption that you have already configured SCING in your environment.
 
 ## Create Job Files
 
-You need two files for processing a V(D)J sample - one inputs file and one labels file. Use the following example files to help you create your configuration file:
+You need two files for processing a GEX sample - one inputs file and one labels file. Use the following example files to help you create your configuration file:
 
 - `configs/template.inputs.json`
 - `configs/template.labels.json`
