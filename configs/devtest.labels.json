@@ -1,0 +1,9 @@
+{
+    "pipelineType": "CellRangerGex",
+    "project": "tinygex",
+    "sample": "tinygex",
+    "owner": "chunj",
+    "destination": "s3://dp-lab-gwf-core/outputs/cr-gex-results/tinygex",
+    "transfer": "skip",
+    "comment": ""
+}

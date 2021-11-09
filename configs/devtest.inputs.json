@@ -1,0 +1,15 @@
+{
+    "CellRangerGex.sampleName": "tinygex",
+    "CellRangerGex.fastqName": "tinygex",
+    "CellRangerGex.inputFastq": [
+        "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L001_I1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L001_R1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L001_R2_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L002_I1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L002_R1_001.fastq.gz",
+        "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L002_R2_001.fastq.gz"
+    ],
+    "CellRangerGex.referenceUrl": "https://dp-lab-test.s3.amazonaws.com/tiny/cellranger_tiny_ref/refdata-gex.tar.gz",
+    "CellRangerGex.memory": 128,
+    "CellRangerGex.dockerRegistry": "quay.io/hisplan"
+}
