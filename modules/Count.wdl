@@ -15,7 +15,7 @@ task Count {
         String dockerRegistry
     }
 
-    String cellRangerVersion = "6.1.1"
+    String cellRangerVersion = "6.1.2"
     String dockerImage = dockerRegistry + "/cromwell-cellranger:" + cellRangerVersion
     Float inputSize = size(inputFastq, "GiB")
 
