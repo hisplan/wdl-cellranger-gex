@@ -10,6 +10,9 @@ workflow Count {
         Array[File] inputFastq
         String referenceUrl
 
+        Boolean includeIntrons
+        Int? expectCells
+
         Int numCores
         Int memory
 
@@ -21,10 +24,12 @@ workflow Count {
         input:
             sampleName = sampleName,
             fastqName = fastqName,
-            inputFastq = inputFastq,            
+            inputFastq = inputFastq,
             referenceUrl = referenceUrl,
+            includeIntrons = includeIntrons,
+            expectCells = expectCells,
             numCores = numCores,
-            memory = memory,            
+            memory = memory,
             dockerRegistry = dockerRegistry
     }
 

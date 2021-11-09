@@ -8,6 +8,8 @@
         "s3://dp-lab-data/collaborators/arudensky/Cd4CellDiffAf/Foxp3_minus/FASTQ/2676_Foxp3_minus_IGO_12104_3_S25_L001_R2_001.fastq.gz"
     ],
     "Count.referenceUrl": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz",
+    "Count.includeIntrons": false,
+    "Count.expectCells": 3000,
     "Count.numCores": 16,
     "Count.memory": 128,
     "Count.dockerRegistry": "quay.io/hisplan"

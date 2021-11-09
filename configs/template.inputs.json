@@ -7,6 +7,8 @@
         "s3://.../test_sample1_S1_L001_R2_001.fastq.gz"
     ],
     "CellRangerGex.referenceUrl": "https://cf.10xgenomics.com/supp/cell-exp/refdata-gex-mm10-2020-A.tar.gz",
+    "CellRangerGex.includeIntrons": false,
+    "CellRangerGex.expectCells": 1000,
     "CellRangerGex.memory": 128,
     "CellRangerGex.dockerRegistry": "quay.io/hisplan"
 }

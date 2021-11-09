@@ -8,6 +8,9 @@ task Count {
         Array[File] inputFastq
         String referenceUrl
 
+        Boolean includeIntrons
+        Int? expectCells = 3000
+
         Int numCores = 16
         Int memory = 128
 
@@ -47,7 +50,8 @@ task Count {
             --fastqs=${path_input} \
             --sample=~{fastqName} \
             --localcores=~{numCores} \
-            --localmem=~{localMemory}
+            --localmem=~{localMemory} \
+            --expect-cells=~{expectCells} ~{true='--include-introns' false='' includeIntrons}
 
         # targz the analysis folder and pipestance metadata if successful
         if [ $? -eq 0 ]

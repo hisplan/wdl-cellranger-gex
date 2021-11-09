@@ -10,6 +10,9 @@ workflow CellRangerGex {
         Array[File] inputFastq
         String referenceUrl
 
+        Boolean includeIntrons
+        Int? expectCells
+
         Int numCores = 16
         Int memory = 128
 
@@ -23,6 +26,8 @@ workflow CellRangerGex {
             fastqName = fastqName,
             inputFastq = inputFastq,
             referenceUrl = referenceUrl,
+            includeIntrons = includeIntrons,
+            expectCells = expectCells,
             numCores = numCores,
             memory = memory,
             dockerRegistry = dockerRegistry

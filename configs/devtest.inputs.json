@@ -10,6 +10,8 @@
         "s3://dp-lab-test/tiny/cellranger_tiny_fastq/tinygex_S1_L002_R2_001.fastq.gz"
     ],
     "CellRangerGex.referenceUrl": "https://dp-lab-test.s3.amazonaws.com/tiny/cellranger_tiny_ref/refdata-gex.tar.gz",
+    "CellRangerGex.includeIntrons": true,
+    "CellRangerGex.expectCells": 1000,    
     "CellRangerGex.memory": 128,
     "CellRangerGex.dockerRegistry": "quay.io/hisplan"
 }
